@@ -18,9 +18,10 @@ import { InstallationCreatedPage } from './pages/InstallationCreatedPage'
 import { InstallationActivatedPage } from './pages/InstallationActivatedPage'
 import { InstallationDetailPage } from './pages/InstallationDetailPage'
 import { InstallationsPage } from './pages/InstallationsPage'
+import { MvpJourneyPage } from './pages/MvpJourneyPage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { OverviewPage } from './pages/OverviewPage'
-import { RoadmapPage } from './pages/RoadmapPage'
+import { ProductRoadmapPage } from './pages/ProductRoadmapPage'
 import { SiteDetailPage } from './pages/SiteDetailPage'
 import { TechnicianJobDetailPage } from './pages/TechnicianJobDetailPage'
 import { TechnicianPortalPage } from './pages/TechnicianPortalPage'
@@ -38,10 +39,11 @@ export default function App() {
       <Route element={<PresentationLayout />}>
         <Route index element={<OverviewPage />} />
         <Route path="overview" element={<OverviewPage />} />
+        <Route path="mvp-journey" element={<MvpJourneyPage />} />
         <Route path="technician" element={<TechnicianPortalPage />} />
         <Route path="technician/jobs/:installationId" element={<TechnicianJobDetailPage />} />
         <Route path="technician/jobs/:installationId/complete" element={<CompleteInstallationPage />} />
-        <Route path="roadmap" element={<RoadmapPage />} />
+        <Route path="roadmap" element={<ProductRoadmapPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
       <Route path="admin" element={<AdminLayout />}>

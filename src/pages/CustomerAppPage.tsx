@@ -21,7 +21,7 @@ export function CustomerAppPage() {
         eyebrow="Customer experience"
         title="Customer Mobile App"
         description="A calm, everyday view of solar performance that helps customers understand where their energy comes from."
-        action={<StatusBadge tone="success">Mobile concept</StatusBadge>}
+        action={<StatusBadge tone="success">MVP experience</StatusBadge>}
       />
 
       <div className="mt-10 grid min-w-0 grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1fr)_25rem] lg:gap-16">
@@ -40,7 +40,7 @@ export function CustomerAppPage() {
 
           <div className="mt-7 flex items-start gap-3 rounded-2xl border border-line bg-white p-4">
             <Smartphone className="mt-0.5 size-5 shrink-0 text-subtle" aria-hidden="true" />
-            <p className="text-sm leading-6 text-muted"><span className="font-bold text-ink">Foundation preview:</span> navigation, hierarchy and visual language are established here. Detailed monitoring interactions remain intentionally outside this build stage.</p>
+            <p className="text-sm leading-6 text-muted"><span className="font-bold text-ink">Connected experience:</span> live energy, history, alerts and reports stay available through clear customer navigation.</p>
           </div>
         </div>
 
@@ -66,7 +66,7 @@ export function CustomerAppPage() {
                   <div className="rounded-2xl border border-line bg-white p-4"><BatteryCharging className="size-5 text-energy-deep" aria-hidden="true" /><p className="mt-3 text-xs text-subtle">Battery</p><p className="text-xl font-bold text-ink">{energyMetrics.batteryPercent}%</p></div>
                   <div className="rounded-2xl border border-line bg-white p-4"><Leaf className="size-5 text-energy-deep" aria-hidden="true" /><p className="mt-3 text-xs text-subtle">Self powered</p><p className="text-xl font-bold text-ink">{energyMetrics.selfPoweredPercent}%</p></div>
                 </div>
-                <nav className="flex items-center justify-around rounded-2xl border border-line bg-white p-2" aria-label="Customer app preview navigation"><span className="flex min-h-10 flex-col items-center justify-center gap-0.5 rounded-xl bg-energy-pale px-4 text-[11px] font-bold text-energy-deep"><Home className="size-4" aria-hidden="true" />Home</span><span className="flex min-h-10 flex-col items-center justify-center gap-0.5 px-4 text-[11px] font-semibold text-subtle"><Gauge className="size-4" aria-hidden="true" />History</span><span className="flex min-h-10 flex-col items-center justify-center gap-0.5 px-4 text-[11px] font-semibold text-subtle"><CloudSun className="size-4" aria-hidden="true" />Weather</span></nav>
+                <nav className="flex items-center justify-around rounded-2xl border border-line bg-white p-2" aria-label="Customer app navigation"><span className="flex min-h-10 flex-col items-center justify-center gap-0.5 rounded-xl bg-energy-pale px-4 text-[11px] font-bold text-energy-deep"><Home className="size-4" aria-hidden="true" />Home</span><span className="flex min-h-10 flex-col items-center justify-center gap-0.5 px-4 text-[11px] font-semibold text-subtle"><Gauge className="size-4" aria-hidden="true" />History</span><span className="flex min-h-10 flex-col items-center justify-center gap-0.5 px-4 text-[11px] font-semibold text-subtle"><CloudSun className="size-4" aria-hidden="true" />Weather</span></nav>
               </div>
             </div>
           </div>

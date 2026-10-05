@@ -1,7 +1,7 @@
 import { ArrowUpRight, BatteryCharging, Building2, Headphones, Mail, MapPin, MessageCircle, Phone, ShieldCheck, SunMedium, Zap } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from '../components/ui/Button'
+import { Button, LinkButton } from '../components/ui/Button'
 import { Card } from '../components/ui/Card'
 import { StatusBadge } from '../components/ui/StatusBadge'
 import { useCustomerApp } from '../features/customer-app/CustomerAppContext'
@@ -61,8 +61,9 @@ export function CustomerProfilePage() {
         </Card>
       </section>
 
-      <div className="mt-6 text-center">
+      <div className="mt-6 flex flex-wrap items-center justify-center gap-2 text-center">
         <Link to="/overview" className="inline-flex min-h-11 items-center gap-2 rounded-xl px-3 text-xs font-bold text-muted hover:bg-white hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-energy" aria-label="Return to the SunGrid demo overview">Demo overview <ArrowUpRight className="size-4" aria-hidden="true" /></Link>
+        <LinkButton to="/roadmap" variant="outline" size="sm">Continue to Roadmap</LinkButton>
       </div>
     </div>
   )

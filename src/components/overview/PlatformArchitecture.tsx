@@ -3,9 +3,9 @@ import { productExperiences } from '../../data/mockData'
 import { ProductExperienceCard } from './ProductExperienceCard'
 
 const integrations = [
-  { label: 'Inverter APIs', detail: 'Live device telemetry', icon: RadioTower },
-  { label: 'Weather API', detail: 'Forecast & irradiance', icon: CloudSun },
-  { label: 'Modbus Devices', detail: 'Local equipment data', icon: Cpu },
+  { label: 'Inverter APIs', detail: 'Solar system performance', icon: RadioTower },
+  { label: 'Weather', detail: 'Forecast and solar context', icon: CloudSun },
+  { label: 'Modbus', detail: 'Local equipment connection', icon: Cpu },
 ]
 
 export function PlatformArchitecture() {
@@ -14,9 +14,9 @@ export function PlatformArchitecture() {
       <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-energy-deep">One connected product</p>
-          <h2 id="platform-map-heading" className="mt-2 text-2xl font-bold tracking-[-0.03em] text-ink sm:text-3xl">Three experiences. One source of truth.</h2>
+          <h2 id="platform-map-heading" className="mt-2 text-2xl font-bold tracking-[-0.03em] text-ink sm:text-3xl">Three experiences. One connected foundation.</h2>
         </div>
-        <p className="max-w-md text-sm leading-6 text-muted">Operational data moves securely between the office, field team and customer—without duplicating work.</p>
+        <p className="max-w-md text-sm leading-6 text-muted">Customer, installation, site and energy information stays connected from the office to the field and customer.</p>
       </div>
 
       <div className="mt-8 grid gap-4 lg:grid-cols-3 lg:gap-5">
@@ -40,11 +40,11 @@ export function PlatformArchitecture() {
           <div className="flex-1">
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-energy">Connected foundation</p>
             <h3 className="mt-1 text-xl font-bold">Energy Platform Backend</h3>
-            <p className="mt-1 text-sm leading-6 text-white/58">Customer, installation, site and energy data coordinated in one secure integration layer.</p>
+            <p className="mt-1 text-sm leading-6 text-white/58">Customer, installation, site and energy information coordinated through one secure platform layer.</p>
           </div>
           <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-xs font-semibold text-white/75">
             <ShieldCheck className="size-4 text-energy" aria-hidden="true" />
-            Shared & secure
+            Shared and secure
           </div>
         </div>
       </div>
@@ -69,10 +69,10 @@ export function PlatformArchitecture() {
         ))}
       </div>
 
-      <p className="sr-only">Admin, technician and customer experiences connect to the Energy Platform Backend, which receives information from inverter APIs, a weather API and Modbus devices.</p>
+      <p className="sr-only">Admin, technician and customer experiences connect to the Energy Platform Backend, which receives information from inverter APIs, weather services and Modbus connections.</p>
       <div className="mt-4 flex items-center justify-center gap-2 text-xs font-semibold text-subtle">
         <Network className="size-4" aria-hidden="true" />
-        Simulated integrations for this concept demo
+        Integration points prepared for technical discovery
       </div>
     </section>
   )

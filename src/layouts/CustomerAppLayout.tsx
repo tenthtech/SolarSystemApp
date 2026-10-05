@@ -96,7 +96,7 @@ export function CustomerAppLayout() {
   }, [location.pathname])
 
   if (requestedCustomerId && !customer) {
-    return <CustomerEntryState title="Customer app unavailable" description="We could not find an account for this customer app preview." />
+    return <CustomerEntryState title="Customer app unavailable" description="We could not find an active customer account for this site." />
   }
 
   if (!customer || customer.accountStatus !== 'active' || !customer.mobileAccessEnabled) {

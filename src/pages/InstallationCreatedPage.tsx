@@ -18,7 +18,7 @@ export function InstallationCreatedPage() {
     return (
       <div className="space-y-6">
         <Breadcrumbs items={[{ label: 'Admin', to: '/admin' }, { label: 'Installations', to: '/admin/installations' }, { label: 'Confirmation unavailable' }]} />
-        <RecordNotFound title="Installation not found" description="This installation confirmation is not available in the current demo data." backTo="/admin/installations" backLabel="Back to Installations" />
+        <RecordNotFound title="Installation not found" description="This installation confirmation is not available in the platform." backTo="/admin/installations" backLabel="Back to Installations" />
       </div>
     )
   }

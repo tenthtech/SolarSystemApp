@@ -31,7 +31,7 @@ export function AdminDashboardPage() {
         eyebrow="Operations overview"
         title="Good morning, Michael"
         description="Here’s what’s happening across SunGrid Electrical & Solar today."
-        action={<StatusBadge tone="success" showDot>Live data simulation</StatusBadge>}
+        action={<StatusBadge tone="success" showDot>Systems reporting</StatusBadge>}
       />
 
       <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4" aria-label="Key business metrics">

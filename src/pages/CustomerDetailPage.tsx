@@ -22,7 +22,7 @@ export function CustomerDetailPage() {
     return (
       <div className="space-y-6">
         <Breadcrumbs items={[{ label: 'Admin', to: '/admin' }, { label: 'Customers', to: '/admin/customers' }, { label: 'Customer not found' }]} />
-        <RecordNotFound title="Customer not found" description="This customer record is not available in the current demo data." backTo="/admin/customers" backLabel="Back to Customers" />
+        <RecordNotFound title="Customer not found" description="This customer record is not available in the platform." backTo="/admin/customers" backLabel="Back to Customers" />
       </div>
     )
   }

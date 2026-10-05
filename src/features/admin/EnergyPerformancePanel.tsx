@@ -59,7 +59,7 @@ export function EnergyPerformancePanel() {
         <div className="mt-6 grid gap-3 border-t border-line pt-5 sm:grid-cols-3">
           <div className="flex items-center gap-3">
             <span className="flex size-9 items-center justify-center rounded-xl bg-amber-50 text-amber-700"><SunMedium className="size-4" aria-hidden="true" /></span>
-            <div><p className="text-xs text-subtle">Home production</p><p className="text-sm font-bold text-ink">{energyMetrics.generatedTodayKwh} kWh</p></div>
+            <div><p className="text-xs text-subtle">Home - Brisbane</p><p className="text-sm font-bold text-ink">{energyMetrics.generatedTodayKwh} kWh</p></div>
           </div>
           <div className="flex items-center gap-3">
             <span className="flex size-9 items-center justify-center rounded-xl bg-blue-pale text-blue-deep"><ArrowDownToLine className="size-4" aria-hidden="true" /></span>

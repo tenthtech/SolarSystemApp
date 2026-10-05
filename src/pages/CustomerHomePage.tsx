@@ -9,8 +9,8 @@ export function CustomerHomePage() {
   const metrics = [
     { label: "Today's Generation", value: energy.today.generationKwh, unit: 'kWh', icon: SunMedium, tone: 'bg-amber-50 text-amber-700' },
     { label: "Today's Consumption", value: energy.today.consumptionKwh, unit: 'kWh', icon: Home, tone: 'bg-energy-pale text-energy-deep' },
-    { label: 'Grid Imported', value: energy.today.importedKwh, unit: 'kWh', icon: PlugZap, tone: 'bg-blue-pale text-blue-deep' },
-    { label: 'Grid Exported', value: energy.today.exportedKwh, unit: 'kWh', icon: Zap, tone: 'bg-violet-50 text-violet-700' },
+    { label: 'Grid Import', value: energy.today.importedKwh, unit: 'kWh', icon: PlugZap, tone: 'bg-blue-pale text-blue-deep' },
+    { label: 'Grid Export', value: energy.today.exportedKwh, unit: 'kWh', icon: Zap, tone: 'bg-violet-50 text-violet-700' },
     { label: 'Self Consumption', value: energy.today.selfConsumptionPercent, unit: '%', icon: Leaf, tone: 'bg-emerald-50 text-emerald-700' },
   ]
 
